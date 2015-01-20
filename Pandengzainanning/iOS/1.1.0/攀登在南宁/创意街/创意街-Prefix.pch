@@ -1,0 +1,32 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+#import "Common.h"
+
+#define  SafeRelease(obj) if(nil!=obj){[obj release];}\
+obj = nil;
+
+#ifndef __QQAPI_ENABLE__
+#define __QQAPI_ENABLE__ 1
+#endif
+
+#define TxtTitleName    @"纯文"
+#define ProductName     @"攀登在南宁"
+#define AppQqID         @"1103700243"
+#define AppQqKey        @"ZB2u85ytEXel8Exy"
+
+#define AppWxId         @"wx1acf03077a419d16"
+#define AppWxSecret     @"7fa1f3e9a0216a166f2cf8df0a3b2f64"
